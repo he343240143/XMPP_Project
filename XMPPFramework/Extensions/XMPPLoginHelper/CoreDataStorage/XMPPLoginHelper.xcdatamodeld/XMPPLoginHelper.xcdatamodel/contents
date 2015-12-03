@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="XMPPLoginUserCoreDataStorageObject" representedClassName="XMPPLoginUserCoreDataStorageObject" syncable="YES">
+        <attribute name="autoLogin" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="clientKeyData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="loginId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loginIdType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="loginTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="serverKeyData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="streamBareJidStr" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="XMPPLoginUserCoreDataStorageObject" positionX="-63" positionY="-18" width="128" height="150"/>
+    </elements>
+</model>

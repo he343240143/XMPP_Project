@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="XMPPMessageCoreDataStorageObject" representedClassName="XMPPMessageCoreDataStorageObject" syncable="YES">
+        <attribute name="additionalMessage" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="bareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="hasBeenRead" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="isGroupChat" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="messageID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageTime" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sendFromMe" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="streamBareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="XMPPServerPushCoreDataStorageObject" syncable="YES"/>
+    <entity name="XMPPUnReadMessageCoreDataStorageObject" representedClassName="XMPPUnReadMessageCoreDataStorageObject" syncable="YES">
+        <attribute name="bareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="hasBeenEnd" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastChatTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="streamBareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="unReadCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="XMPPUserRequestCoreDataStorageObject" syncable="YES">
+        <attribute name="bareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="isPrivate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="requestStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="requestTime" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="streamBareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="XMPPMessageCoreDataStorageObject" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="XMPPServerPushCoreDataStorageObject" positionX="0" positionY="0" width="128" height="45"/>
+        <element name="XMPPUnReadMessageCoreDataStorageObject" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="XMPPUserRequestCoreDataStorageObject" positionX="0" positionY="0" width="128" height="120"/>
+    </elements>
+</model>
